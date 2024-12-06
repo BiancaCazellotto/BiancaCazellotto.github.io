@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Dados</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>Cadastro de Dados</h2>
+    <form>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td><label for="nome">Nome</label></td>
+                    <td><input type="text" class="form-control" id="nome" placeholder="Digite seu nome"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail</label></td>
+                    <td><input type="email" class="form-control" id="email" placeholder="Digite seu e-mail"></td>
+                </tr>
+                <tr>
+                    <td><label for="contato">Contato</label></td>
+                    <td><input type="text" class="form-control" id="contato" placeholder="Digite seu número de contato"></td>
+                </tr>
+                <tr>
+                    <td><label for="cep">CEP</label></td>
+                    <td><input type="text" class="form-control" id="cep" placeholder="Digite seu CEP"></td>
+                </tr>
+                <tr>
+                    <td><label for="endereco">Endereço</label></td>
+                    <td><input type="text" class="form-control" id="endereco" placeholder="Digite seu endereço"></td>
+                </tr>
+                <tr>
+                    <td><label for="numero">Número</label></td>
+                    <td><input type="text" class="form-control" id="numero" placeholder="Digite o número da residência"></td>
+                </tr>
+                <tr>
+                    <td><label for="bairro">Bairro</label></td>
+                    <td><input type="text" class="form-control" id="bairro" placeholder="Digite seu bairro"></td>
+                </tr>
+                <tr>
+                    <td><label for="cidade">Cidade</label></td>
+                    <td><input type="text" class="form-control" id="cidade" placeholder="Digite sua cidade"></td>
+                </tr>
+                <tr>
+                    <td><label for="estado">Estado</label></td>
+                    <td>
+                        <select class="form-control" id="estado">
+                            <option value="">Selecione um estado</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PR">Paraná</option>
+                            <!-- Adicione outros estados conforme necessário -->
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="text-center">
+            <!-- Botões de ação -->
+            <button type="submit" class="btn btn-success">Salvar</button>
+            <button type="button" class="btn btn-danger">Excluir</button>
+            <button type="button" class="btn btn-secondary" onclick="window.history.back()">Voltar</button>
+        </div>
+    </form>
+</div>
+
+<!-- Link para o JS do Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
